@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     util.logTextView(this, resultL, "서비스중이 아닙니다. 데이터를 받을 수 없습니다.");
                     return;
                 } else {
+                    Toast.makeText(this, String.format("Lotto 숫자 : %s", Arrays.toString(ms.getRun())), Toast.LENGTH_SHORT).show();
                     util.logTextView(this, resultL, "Lotto 숫자 : "+ Arrays.toString(ms.getRun()));
                 }
         }
